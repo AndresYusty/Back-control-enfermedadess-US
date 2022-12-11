@@ -11,6 +11,8 @@ import org.springframework.stereotype.Service;
 
 @Service                       
 /*Aqui indicamos que es un servicio y se usa para inyectar las dependencias*/
+
+
 public class EnfermedadEstudianteServiceImplement implements IEnfermedadEstudianteService {
 
 	
@@ -48,6 +50,13 @@ public class EnfermedadEstudianteServiceImplement implements IEnfermedadEstudian
 		
 		Repo.deleteById(id);
 	}
-	
+
+	@Override
+	public List<EnfermedadEstudiante> listarEnfermedadesPorEstudiante(int idEstudiante) {
+		
+		return Repo.listarEnfermedadesPorEstudiante(idEstudiante);
+	}
+
+
 	
 }

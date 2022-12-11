@@ -31,8 +31,8 @@ private Estudiante estudiante;
 @Column(name="nombre", nullable = false)
 private String nombre;
 
-@Column(name="descripcion", nullable = false)
-private String descripcion;
+@Column(name="observacion", nullable = false)
+private String observacion;
 
 
 

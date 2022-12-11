@@ -11,3 +11,4 @@ spring:
     password: yusty123
 server:
   port: 8282
+  

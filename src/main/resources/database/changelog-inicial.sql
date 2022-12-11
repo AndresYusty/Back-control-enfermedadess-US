@@ -56,3 +56,20 @@ INSERT INTO tipo_sangre (nombre,descripcion) VALUES
 ("A-","A negativo"),
 ("O+","O positivo"),
 ("O-","O negativo");
+
+-- changeset andres:7
+-- comment: Tabla usuarios
+CREATE TABLE usuario(
+	id INT PRIMARY KEY AUTO_INCREMENT,
+    username  VARCHAR(50) NOT NULL unique,
+    clave VARCHAR(60) NOT NULL,
+    activo boolean NOT NULL,
+    rol varchar(20) NOT NULL
+);
+
+-- changeset andres:8
+-- comment: Insert into a usuario
+INSERT  INTO usuario (username,clave,activo,rol) VALUES 
+("u20211197218", "$2a$10$wMnQksKFxUfS/d.9KYUWReBL.9hKBksyEAP8J0udFmqnljv0cwN/y", true, "Administrador" );
+
+

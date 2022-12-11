@@ -7,7 +7,7 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 
-               /* estos repositorios no sirven para poder heredar un crud de JpaRepository */
+               /* estos repositorios nos sirven para poder heredar un crud de JpaRepository */
 public interface IEstudianteRepository extends JpaRepository<Estudiante, Integer> {
 
 }

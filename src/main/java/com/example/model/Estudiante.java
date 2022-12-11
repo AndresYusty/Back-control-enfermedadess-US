@@ -26,16 +26,16 @@ public class Estudiante {
 	private int id;
 	
 	@Column(name="numero_identificacion" , nullable = false)
-	private String NumeroIdentificacion;
+	private String numeroIdentificacion;
 	
-	@Column(name="nombre", nullable = false)
+	@Column(name="nombre", nullable = false, length = 50)
 	private String nombre;
 	
-	@Column(name="apellido", nullable = false)
+	@Column(name="apellido", nullable = false, length = 50)
 	private String apellido;
 	
 	@Column(name="fecha_nacimiento", nullable = false)
-	private LocalDate Fecha_nacimiento;
+	private LocalDate fechaNacimiento;
 	
 	@ManyToOne
 	@JoinColumn(name="id_tipo_identificacion", nullable = false)

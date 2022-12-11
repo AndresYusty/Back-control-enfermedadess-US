@@ -18,7 +18,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 
 
-@RequestMapping("api/tipo-identificacion") /*DE que manera por url accedo a esta clase para llamar a los metodos*/
+@RequestMapping("/api/tipo-identificacion") /*DE que manera por url accedo a esta clase para llamar a los metodos*/
 
 public class TipoIdentificacionRest {
 	

@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("api/tipo-sangre") /*se identifica con url haciendo un mapeo de esta forma*/
+@RequestMapping("/api/tipo-sangre") /*se identifica con url haciendo un mapeo de esta forma*/
 public class TipoSangreRest {
 
 	
