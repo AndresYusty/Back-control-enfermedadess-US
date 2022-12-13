@@ -52,9 +52,8 @@ public class EnfermedadEstudianteServiceImplement implements IEnfermedadEstudian
 	}
 
 	@Override
-	public List<EnfermedadEstudiante> listarEnfermedadesPorEstudiante(int idEstudiante) {
-		
-		return Repo.listarEnfermedadesPorEstudiante(idEstudiante);
+	public List<EnfermedadEstudiante> listarPorIdEstudiante(int idEstudiante) {
+		return Repo.listarPorIdEstudiante(idEstudiante);
 	}
 
 

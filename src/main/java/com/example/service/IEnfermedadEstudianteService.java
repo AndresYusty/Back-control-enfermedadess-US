@@ -10,6 +10,6 @@ public interface IEnfermedadEstudianteService extends ICrudService<EnfermedadEst
 	
 	/*Necesitamos tenerla en el servicio para poder ser implementada*/
 
-	public List<EnfermedadEstudiante> listarEnfermedadesPorEstudiante( int idEstudiante);	
+	public List<EnfermedadEstudiante> listarPorIdEstudiante(int idEstudiante);
 	
 }

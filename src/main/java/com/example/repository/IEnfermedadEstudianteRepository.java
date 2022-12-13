@@ -18,8 +18,9 @@ public interface IEnfermedadEstudianteRepository extends JpaRepository<Enfermeda
 	
 
 	
-	@Query("from EnfermedadEstudiante ee where ee.estudiante.id = :idEstudiante ")
-	public List<EnfermedadEstudiante> listarEnfermedadesPorEstudiante(@Param("idEstudiante")  int idEstudiante);
+
+	@Query("from EnfermedadEstudiante ee where ee.estudiante.id = :idEstudiante")
+	public List<EnfermedadEstudiante> listarPorIdEstudiante(@Param("idEstudiante") int idEstudiante);
 		
 	/* El metodo List<EnfermedadEstudiante nos sirve para heredar la lista de enfermedades del estudiante que recibimos por id en el parametro> */
 

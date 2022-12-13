@@ -34,10 +34,9 @@ public class EnfermedadEstudianteRest {
 		
 	}
     
-    @GetMapping("/listarEnfermedadesPorEstudiante/{idEstudiante}")
-    public List<EnfermedadEstudiante> listarEnfermedadesPorEstudiante(@PathVariable int idEstudiante){
-    	return service.listarEnfermedadesPorEstudiante(idEstudiante);
-    }
-
+	@GetMapping("/listarPorIdEstudiante/{idEstudiante}")
+	public List<EnfermedadEstudiante> listarPorIdEstudiante(@PathVariable int idEstudiante) {
+		return service.listarPorIdEstudiante(idEstudiante);
+	}
 	
 }
