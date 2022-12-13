@@ -1,0 +1,14 @@
+
+spring:
+  jpa:
+    database: MYSQL
+    show-sql: true
+    hibernate:
+      ddl-auto: none
+  datasource:
+    url: jdbc:mysql://enfermedades-db:3306/universidad?createDatabaseIfNotExist=true
+    username : root
+    password: yusty123
+server:
+  port: 8282
+  
